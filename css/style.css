@@ -1,3 +1,120 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #282d31;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.body {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 100vh; }
+
+.header-2 {
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fcf4e9;
+  text-align: center; }
+
+.header-3 {
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fcf4e9;
+  text-align: center; }
+
 .header {
-  padding: 0px;
-  font: 2rem; }
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/back-ground.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .header__link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1baa80;
+    padding: 1.5rem 5rem;
+    border-radius: 5rem;
+    border: 3px solid #20c997;
+    margin-top: 2rem;
+    transition: all .5s; }
+  .header__link:hover, .header__link:focus {
+    color: #fcf4e9;
+    background-color: #20c997; }
+
+.typing_title {
+  padding: 2rem; }
+
+.typing_title .text {
+  letter-spacing: 0.4rem;
+  position: relative;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fcf4e9; }
+
+.typing_title .text.first-text {
+  color: #20c997; }
+
+.icon-down {
+  text-decoration: none;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #909294;
+  animation: UpDown 2s infinite; }
+
+@keyframes UpDown {
+  0%, 100% {
+    transform: translateY(0) rotate(90deg); }
+  50% {
+    transform: translateY(5rem) rotate(90deg); } }
+
+.nav_bar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: #111418;
+  position: fixed;
+  height: 100%;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nav_bar__img {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: 1rem solid #212529; }
+  .nav_bar__list {
+    list-style: none;
+    text-align: center; }
+  .nav_bar__item {
+    padding: .8rem;
+    font-size: 2rem;
+    font-weight: 700; }
+  .nav_bar__link {
+    text-decoration: none;
+    color: #909294; }

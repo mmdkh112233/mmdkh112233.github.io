@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
-    <title>portfolio</title>
+    <title>My Portfolio</title>
 </head>
-<body>
+<body class="body">
+    <nav class="nav_bar">
+        <img src="img/profile.jpg" alt="profile-image" class="nav_bar__img">
+        <h2 class="header-2">Mohammad Hosein Dadkhah</h2>
+        <ul class="nav_bar__list">
+            <li class="nav_bar__item"><a href="#" class="nav_bar__link">Home</a></li>
+            <li class="nav_bar__item"><a href="#" class="nav_bar__link">About Me</a></li>
+            <li class="nav_bar__item"><a href="#" class="nav_bar__link">What I Do</a></li>
+            <li class="nav_bar__item"><a href="#" class="nav_bar__link">Resume</a></li>
+            <li class="nav_bar__item"><a href="#" class="nav_bar__link">Portfolio</a></li>
+            <li class="nav_bar__item"><a href="#" class="nav_bar__link">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__content">
+            <h2 class="header-2">Welcome</h2>
+            <div class="typing_title">
+                <span class="text first-text">I'm </span>
+                <span class="text second-text"></span>
+            </div>
+            <h3 class="header-3">based in Esfahan,Iran</h3>
+            <a href="#" class="header__link">Hire Me</a>
+            <a href="#" class="icon-down header-3">&#8250;</a>
+        </div>
+    </header>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>
+    new Typed('.second-text' , {
+        strings : ["Mohammad Hosein Dadkhah", "a Freelanser", "a Front-end Developer", "a Web Disaner"],
+        typeSpeed : 100,
+        backSpeed : 100,
+        loop : true
+    })
+</script>
 </html>
