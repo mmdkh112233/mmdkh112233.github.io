@@ -69,6 +69,9 @@
         padding: .8rem;
         font-size: 2rem;
         font-weight: 700;
+        @media only screen and (max-width: $bp-large){
+           border-bottom: 1px solid rgba($color-grey-light-1, 0.25);
+        }
     }
 
     &__link {

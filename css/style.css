@@ -21,11 +21,11 @@ body {
 .body {
   display: grid;
   grid-template-columns: 20vw 80vw;
-  grid-template-rows: 100vh; }
+  grid-template-rows: 100vh minmax(10rem, max-content); }
   @media only screen and (max-width: 62.5em) {
     .body {
       grid-template-columns: 100vw;
-      grid-template-rows: 7rem calc(100vh - 7rem); } }
+      grid-template-rows: 7rem calc(100vh - 7rem) minmax(10rem, max-content); } }
 
 .header-2 {
   padding: 1rem;
@@ -155,6 +155,9 @@ body {
     padding: .8rem;
     font-size: 2rem;
     font-weight: 700; }
+    @media only screen and (max-width: 62.5em) {
+      .nav_bar__item {
+        border-bottom: 1px solid rgba(252, 244, 233, 0.25); } }
   .nav_bar__link {
     text-decoration: none;
     color: #909294; }
@@ -186,3 +189,21 @@ body {
   .nav_bar__checkbox:checked ~ .nav_bar__list {
     height: 40vh;
     opacity: 1; } }
+
+.about_me {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #212529;
+  padding: 5rem 3rem; }
+  @media only screen and (max-width: 62.5em) {
+    .about_me {
+      grid-row: 3 / 4;
+      grid-column: 1 / 2; } }
+  .about_me__text {
+    font-size: 2rem;
+    color: #fcf4e9;
+    padding: 1rem; }
+  .col-md-5 .about_me__text:not(:last-child) {
+    border-bottom: 1px solid rgba(32, 201, 151, 0.25); }
+  .about_me .header-3 {
+    text-align: left; }
