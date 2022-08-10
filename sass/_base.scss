@@ -49,11 +49,11 @@ body {
 .body {
     display: grid;
     grid-template-columns: 20vw 80vw;
-    grid-template-rows: 100vh minmax(10rem , max-content);
+    grid-template-rows: 100vh repeat(2 ,minmax(10rem , max-content));
 
     @media only screen and (max-width : $bp-large) {
         grid-template-columns: 100vw;
-        grid-template-rows: 7rem calc(100vh - 7rem) minmax(10rem , max-content);
+        grid-template-rows: 7rem calc(100vh - 7rem) repeat(2 ,minmax(10rem , max-content));
     }
 }
 

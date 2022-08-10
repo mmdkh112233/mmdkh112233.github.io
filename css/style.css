@@ -21,11 +21,11 @@ body {
 .body {
   display: grid;
   grid-template-columns: 20vw 80vw;
-  grid-template-rows: 100vh minmax(10rem, max-content); }
+  grid-template-rows: 100vh repeat(2, minmax(10rem, max-content)); }
   @media only screen and (max-width: 62.5em) {
     .body {
       grid-template-columns: 100vw;
-      grid-template-rows: 7rem calc(100vh - 7rem) minmax(10rem, max-content); } }
+      grid-template-rows: 7rem calc(100vh - 7rem) repeat(2, minmax(10rem, max-content)); } }
 
 .header-2 {
   padding: 1rem;
@@ -206,4 +206,27 @@ body {
   .col-md-5 .about_me__text:not(:last-child) {
     border-bottom: 1px solid rgba(32, 201, 151, 0.25); }
   .about_me .header-3 {
+    text-align: left; }
+
+.services {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  background-color: #282d31;
+  padding: 5rem 3rem; }
+  @media only screen and (max-width: 62.5em) {
+    .services {
+      grid-row: 4 / 5;
+      grid-column: 1 / 2; } }
+  .services__text {
+    font-size: 2rem;
+    color: #fcf4e9; }
+  .services__icon {
+    float: right;
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
+    background-color: #212529;
+    border-radius: 5px;
+    fill: #20c997; }
+  .services .header-3 {
     text-align: left; }
