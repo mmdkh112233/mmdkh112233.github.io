@@ -22,11 +22,11 @@ body {
 .body {
   display: grid;
   grid-template-columns: 20vw 80vw;
-  grid-template-rows: 100vh repeat(3, minmax(10rem, max-content)); }
+  grid-template-rows: 100vh repeat(4, minmax(10rem, max-content)); }
   @media only screen and (max-width: 62.5em) {
     .body {
       grid-template-columns: 100vw;
-      grid-template-rows: 7rem calc(100vh - 7rem) repeat(3, minmax(10rem, max-content)); } }
+      grid-template-rows: 7rem calc(100vh - 7rem) repeat(4, minmax(10rem, max-content)); } }
 
 .header-2 {
   padding: 1rem;
@@ -280,3 +280,81 @@ body {
   .resume .text-light {
     font-size: 1.5rem;
     font-weight: 600; }
+
+.contact {
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+  background-color: #212529;
+  padding: 5rem 3rem; }
+  @media only screen and (max-width: 62.5em) {
+    .contact {
+      grid-row: 6 / 7;
+      grid-column: 1 / 2; } }
+  .contact .header-2 {
+    margin: 10rem 0; }
+  .contact .header-3 {
+    padding: .5rem;
+    text-align: left; }
+  .contact__address {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  .contact__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: #20c997;
+    padding: 1rem;
+    margin-right: 1rem; }
+  .contact__icon--gray {
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    fill: #909294; }
+  .contact--address {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fcf4e9; }
+  .contact__input {
+    width: 100%;
+    border: none;
+    height: 5rem;
+    border-radius: 5px;
+    background-color: #282d31;
+    font-size: 2rem;
+    color: #fcf4e9; }
+    .contact__input::placeholder {
+      padding: 0rem 1rem; }
+  .contact__input:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 2rem rgba(144, 146, 148, 0.2); }
+  .contact__textarea {
+    width: 99%;
+    border: none;
+    border-radius: 5px;
+    background-color: #282d31;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fcf4e9; }
+  .contact__textarea:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 2rem rgba(144, 146, 148, 0.2); }
+  .contact__btn {
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    background-color: #20c997;
+    color: #fcf4e9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 0.5rem 2rem rgba(144, 146, 148, 0.2);
+    transition: all .2s; }
+  .contact__btn:hover {
+    box-shadow: 0 0.75rem 2rem rgba(144, 146, 148, 0.2);
+    transform: translateY(-3px);
+    background-color: #1baa80; }
+  .contact__btn:focus {
+    box-shadow: 0 0.5rem 2rem rgba(144, 146, 148, 0.2);
+    transform: translateY(-1px);
+    background-color: #1baa80; }
