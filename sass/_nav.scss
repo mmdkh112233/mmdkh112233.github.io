@@ -10,13 +10,14 @@
     justify-content: center;
     align-items: center;
     z-index: 5;
-
+    overflow: hidden;
     @media only screen and (max-width: $bp-large){
         flex-direction: row;
         position: fixed;
-        width: 100vw;
+        justify-content: space-around;
+        width: 100%;         
         height: 7rem;
-    }
+        }
 
 
 
@@ -91,8 +92,7 @@
 @media only screen and (max-width: $bp-large){
     .nav-bar__btn {
         display: block;
-        margin-right: 10rem;
-        @media only screen and (max-width: 600px){ margin-right: 3rem;}
+        margin-right: 3rem;
 
 
         background-color: $color-grey-light-1;
