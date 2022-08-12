@@ -1,6 +1,7 @@
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    width: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.8),
      rgba(0, 0, 0, 0.8)), url('../img/back-ground.jpg');
     background-size: cover;

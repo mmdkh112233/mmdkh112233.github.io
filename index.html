@@ -8,13 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <script defer src="bootstrap/bootstrap.js"></script>
     <script defer src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 </head>
-<body class="body">
+<body class="body" onload="removeLoader();">
+
+    <!-- loading... -->
+    <div class="spinner" id="loader">
+        <svg id="loader-content">
+            <use href="img/icon.svg#icon-spinner3"></use>
+        </svg>
+        <p>Loading...</p>
+    </div>
+
+
     <nav class="nav_bar">
         <img src="img/profile.jpeg" alt="profile-image" class="nav_bar__img">
         <h2 class="header-2">Mohammad Hosein Dadkhah</h2>
@@ -29,7 +40,7 @@
             <li class="nav_bar__item"><a href="#" class="nav_bar__link">Contact</a></li>
         </ul>
     </nav>
-    <header class="header">
+    <header class="header" id="Home">
         <div class="header__content">
             <h2 class="header-2">Welcome</h2>
             <div class="typing_title">
@@ -42,19 +53,19 @@
         </div>
     </header>
 
-    <section class="about_me">
+    <section class="about_me" id="About Me">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="header-2">Know Me More</h2>
+                    <h2 class="header-2" data-aos="fade-up">Know Me More</h2>
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-md-6 offset-md-1">
+                <div class="col-md-6 offset-md-1" data-aos="fade-right">
                     <h3 class="header-3 fw-4">I'm Mohammad Hosein Dadkhah</h3>
                     <p class="about_me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati vel placeat commodi aliquam saepe explicabo hic neque fugit, consequuntur nihil veritatis illo necessitatibus possimus natus repellendus. Rerum, similique architecto!</p>
                 </div>
-                <div class="col-md-5 mt-4">
+                <div class="col-md-5 mt-4" data-aos="fade-left">
                     <p class="about_me__text">Name : Mohammad Hosein Dadkhah</p>
                     <p class="about_me__text">Email : mohamaddadkhah69@gmail.com</p>
                     <p class="about_me__text">Age : 28</p>
@@ -64,13 +75,13 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="What I Do">
         <div class="container mt-4">
             <div class="row">
-                <h2 class="header-2">What I Do ?</h2>
+                <h2 class="header-2" data-aos="fade-up">What I Do ?</h2>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="row">
                         <div class="col-4 mt-3">
                             <svg class="services__icon">
@@ -94,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <div class="row">
                         <div class="col-4 mt-3">
                             <svg class="services__icon">
@@ -124,13 +135,13 @@
 
     </section>
 
-    <section class="resume">
+    <section class="resume" id="Resume">
         <div class="container mt-4">
             <div class="row">
-                <h2 class="header-2">Resume</h2>
+                <h2 class="header-2" data-aos="fade-up">Resume</h2>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="row">
                         <h2 class="header-3">My Education</h2>
                     </div>
@@ -151,7 +162,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 mt-5 mt-md-0">
+                <div class="col-md-6 mt-5 mt-md-0" data-aos="fade-left">
                     <div class="row">
                         <h2 class="header-3">My Experience</h2>
                     </div>
@@ -209,13 +220,13 @@
             </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="Portfolio">
         <div class="container mt-4">
             <div class="row">
-                <h2 class="header-2">My Work</h2>
+                <h2 class="header-2" data-aos="fade-up">My Work</h2>
             </div>
             <div class="row">
-                <div class="portfolio__card">
+                <div class="portfolio__card" data-aos="fade-up">
                     <h3 class="header-3">1. forkify (Search over 1,000,000 recipes)</h3>
                     <p class="resume__card--place">Java Script fetch API, OOP, Add new recipe</p>
                     <div class="row">
@@ -232,13 +243,13 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="Contact">
         <div class="container mt-4">
             <div class="row">
-                <h2 class="header-2">Get In Thouch</h2>
+                <h2 class="header-2" data-aos="fade-up">Get In Thouch</h2>
             </div>
             <div class="row g-5">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right">
                     <h3 class="header-3">Address</h3>
                     <div class="contact__address">
                         <svg class="contact__icon">
@@ -271,7 +282,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-left">
                     <h3 class="header-3">Send Me A Note</h3>
                     <form class="contact__form" action="#">
                         <div class="row">
@@ -300,6 +311,7 @@
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     new Typed('.second-text' , {
         strings : ["Mohammad Hosein Dadkhah", "a Freelanser", "a Front-end Developer", "a Web Disaner"],
@@ -307,5 +319,16 @@
         backSpeed : 50,
         loop : true
     })
+
+    AOS.init();
+
+    function removeLoader(){
+  
+  setTimeout(()=>{
+     let loader = document.getElementById('loader');
+  
+  // hide the loader
+  loader.style = 'display: none;';
+  },2000)}
 </script>
 </html>

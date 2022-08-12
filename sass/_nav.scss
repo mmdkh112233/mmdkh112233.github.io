@@ -14,7 +14,7 @@
     @media only screen and (max-width: $bp-large){
         flex-direction: row;
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 7rem;
     }
 
@@ -81,13 +81,19 @@
             color: $color-grey-light-1;
         }
     }
+
+    &__link:hover {
+        color: $color-primary;
+    }
 }
 
 .nav-bar__btn {display: none;}
 @media only screen and (max-width: $bp-large){
     .nav-bar__btn {
         display: block;
-        margin-right: 1rem;
+        margin-right: 10rem;
+        @media only screen and (max-width: 600px){ margin-right: 3rem;}
+
 
         background-color: $color-grey-light-1;
         height: 2px;

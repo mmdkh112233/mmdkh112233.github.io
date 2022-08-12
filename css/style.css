@@ -8,9 +8,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 62.5em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.2em) {
+    html {
+      font-size: 42%; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -42,9 +45,43 @@ body {
   color: #fcf4e9;
   text-align: center; }
 
+#loader p {
+  text-align: center;
+  color: #fcf4e9;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 5rem; }
+
+.spinner {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  z-index: 99999;
+  background: #212529; }
+
+.spinner svg {
+  height: 10rem;
+  width: 10rem;
+  fill: #fcf4e9;
+  animation: rotate 2s infinite linear; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
 .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/back-ground.jpg");
   background-size: cover;
   display: flex;
@@ -117,7 +154,7 @@ body {
     .nav_bar {
       flex-direction: row;
       position: fixed;
-      width: 100%;
+      width: 100vw;
       height: 7rem; } }
   .nav_bar__img {
     display: block;
@@ -165,6 +202,8 @@ body {
     @media only screen and (max-width: 62.5em) {
       .nav_bar__link {
         color: #fcf4e9; } }
+  .nav_bar__link:hover {
+    color: #20c997; }
 
 .nav-bar__btn {
   display: none; }
@@ -172,11 +211,19 @@ body {
 @media only screen and (max-width: 62.5em) {
   .nav-bar__btn {
     display: block;
-    margin-right: 1rem;
+    margin-right: 10rem;
     background-color: #fcf4e9;
     height: 2px;
     width: 4.5rem;
-    display: block; }
+    display: block; } }
+  @media only screen and (max-width: 62.5em) and (max-width: 860px) {
+    .nav-bar__btn {
+      margin-right: 20rem; } }
+  @media only screen and (max-width: 62.5em) and (max-width: 600px) {
+    .nav-bar__btn {
+      margin-right: 9rem; } }
+
+@media only screen and (max-width: 62.5em) {
     .nav-bar__btn::before, .nav-bar__btn::after {
       content: "";
       background-color: #fcf4e9;
