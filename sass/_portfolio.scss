@@ -1,0 +1,38 @@
+.portfolio {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    background-color: $color-grey-dark-2;
+    padding: 5rem 3rem;
+
+    @media only screen and (max-width : $bp-large){
+        grid-row: 6 / 7;
+        grid-column: 1 / 2;
+    }
+
+    
+    & .header-2 {
+        margin: 8rem 0;
+    }
+
+    & .header-3 {
+        padding: .5rem;
+        text-align: left;
+    }
+
+    &__card {
+        background-color: $color-grey-dark-1;
+        padding: 2rem;
+        
+    }
+
+    &__text {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: $color-grey-light-1;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+}
