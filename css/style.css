@@ -230,7 +230,7 @@ body {
     .nav-bar__btn::after {
       transform: translateY(-0.3rem); }
   .nav_bar__checkbox:checked ~ .nav_bar__list {
-    height: 40vh;
+    height: 20rem;
     opacity: 1; } }
 
 .about_me {
