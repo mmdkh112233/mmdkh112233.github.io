@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <script defer src="bootstrap/bootstrap.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>نمونه کارها من</title>
+</head>
+<body class="body" onload="removeLoader();">
+
+    <!-- loading... -->
+    <div class="spinner" id="loader">
+        <svg id="loader-content">
+            <use href="img/icon.svg#icon-spinner3"></use>
+        </svg>
+        <p>درحال بارگذاری...</p>
+    </div>
+
+
+    <nav class="nav_bar">
+        <img src="img/profile.jpeg" alt="profile-image" class="nav_bar__img">
+        <h2 class="header-2">محمدحسین داخواه</h2>
+        <input type="checkbox" class="nav_bar__checkbox" id="navi-toggel">
+        <label for="navi-toggel" class="nav-bar__btn">-</label>
+        <ul class="nav_bar__list">
+            <li class="nav_bar__item"><a href="#Home" class="nav_bar__link">خانه</a></li>
+            <li class="nav_bar__item"><a href="#About Me" class="nav_bar__link">درباره من</a></li>
+            <li class="nav_bar__item"><a href="#What I Do" class="nav_bar__link">چه کاری انجام میدهم</a></li>
+            <li class="nav_bar__item"><a href="#Resume" class="nav_bar__link">رزومه</a></li>
+            <li class="nav_bar__item"><a href="#Portfolio" class="nav_bar__link">نمونه کار</a></li>
+            <li class="nav_bar__item"><a href="#Contact" class="nav_bar__link">ارتباط</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="Home">
+        <div class="header__content">
+            <h2 class="header-2">خوش آمدید</h2>
+            <div class="typing_title">
+                <span class="text first-text">من</span>
+                <span class="text second-text"></span>
+            </div>
+            <h3 class="header-3">مستقر در اصفهان,نجف آباد</h3>
+            <a href="#Contact" id="hireMe" class="header__link">استخدام من</a>
+            <a href="#About Me" class="icon-down header-3">&#8250;</a>
+        </div>
+    </header>
+
+    <section class="about_me" id="About Me" style="overflow-x: hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="header-2" data-aos="fade-up">منو بیشتر بشناس</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 offset-md-1" data-aos="fade-right">
+                    <h3 class="header-3 fw-4">من محمدحسین داخواه هستم</h3>
+                    <p class="about_me__text">
+                        اگر یک سایت کسب کار یا یک سایت محتوا نیاز داشته باشید میتوانم کمکتان کنم.<br>
+                        متولد شده در شهر نجف آباد اصفهان در سال 1378 .<br>
+                        اولین بار در سال 1399 با آشنایی یک سینور شروع به برنامه نویسی کردم.<br>
+                    </p>
+                </div>
+                <div class="col-md-5 mt-4" data-aos="fade-left">
+                    <p class="about_me__text">نام : محمدحسین داخواه</p>
+                    <p class="about_me__text">پست الکترونیکی : mohamaddadkhah69@gmail.com</p>
+                    <p class="about_me__text">سن : 24</p>
+                    <p class="about_me__text">از : اصفهان,نجف آباد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="What I Do" style="overflow-x: hidden">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">چه کاری انجام میدهم؟</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="row">
+                        <div class="col-4 mt-3">
+                            <svg class="services__icon">
+                                <use xlink:href="img/icon.svg#icon-tools"></use>
+                            </svg>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="header-3">طراحی سایت</h3>
+                            <p class="services__text">
+                                طراحی سایت با ایده های متنوع رنگ بندی و انیمیشن سازی و انواع افکت ها
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-4 mt-3">
+                            <svg class="services__icon">
+                                <use xlink:href="img/icon.svg#icon-developer_mode"></use>
+                            </svg>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="header-3">توسعه وب</h3>
+                            <p class="services__text">
+                                تبدیل عکس طراحی شده توسط طراحان وب یه کد و اجرا به صورت وب اپلیکیشن
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-4 mt-3">
+                            <svg class="services__icon">
+                                <use xlink:href="img/icon.svg#icon-display"></use>
+                            </svg>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="header-3">فرانت اند</h3>
+                            <p class="services__text">
+                                توسعه ظاهر سایت و ایجاد واکنش نصبت به اعمال کاربر و طراحی ریسپانیسو
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-4 mt-3">
+                            <svg class="services__icon">
+                                <use xlink:href="img/icon.svg#icon-database"></use>
+                            </svg>
+                        </div>
+                        <div class="col-8">
+                            <h3 class="header-3">بک اند</h3>
+                            <p class="services__text">
+                                متصل کردن رابط کاربری به پایگاه داده و انتقال داده ها
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="resume" id="Resume" style="overflow-x: hidden">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">رزومه</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="row">
+                        <h2 class="header-3">تحصیلات من</h2>
+                    </div>
+                    <div class="resume__card">
+                        <p class="resume__card--year">1396 - 1401</p>
+                        <h2 class="header-3">مهندسی مکانیک</h2>
+                        <p class="resume__card--place">دانشگاه یزد</p>
+                        <p class="resume__card--text">
+                            سال 1396 در کنکور سراسری ریاضی رشته مکانیک دانشگاه یزد را قبول شدم
+                        </p>
+                    </div>
+                    <div class="resume__card">
+                        <p class="resume__card--year">1400 - 1399</p>
+                        <h2 class="header-3">Php (Larevel)</h2>
+                        <p class="resume__card--place">خودآموز</p>
+                        <p class="resume__card--text">
+                            در حدود یک سال و نیم و دوره های مختلف و همکاری با یک سینور در چند پروژه.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0" data-aos="fade-left">
+                    <div class="row">
+                        <h2 class="header-3">تجربیات من</h2>
+                    </div>
+                    <div class="resume__card">
+                        <p class="resume__card--year">1401</p>
+                        <h2 class="header-3"> CSS پیشرفته</h2>
+                        <p class="resume__card--place">دوره Jonass Chmedtmann</p>
+                        <p class="resume__card--text">
+                            دوره css پیشرفته واستفاده از node-sass وطراحی ریسپانیسو با flex-box و grid
+                        </p>
+                    </div>
+                    <div class="resume__card">
+                        <p class="resume__card--year">1401</p>
+                        <h2 class="header-3">Java Scritp پیشرفته</h2>
+                        <p class="resume__card--place">دوره Jonass Chmedtmann</p>
+                        <p class="resume__card--text">
+                            کارکردن با آرایه ها و شی گرایی و دریافت ارسال API و واکنش پذیری ودریافت اطلاعات کاربر
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <h2 class="header-3">مهارت های من</h2>
+            </div>
+            <div class="row mt-1 g-5">
+                <div class="col-md-6">
+                    <p class="text-light fw-500 text-end mb-2">90%<span class="float-start">HTML/CSS</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                      <p class="text-light fw-500 text-end mb-2"> 80%<span class="float-start">Java Script</span>
+                      </p>
+                    <div class="progress progress-sm bg-black mb-5">
+                          <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">95%<span class="float-start">Bootstrap</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-light fw-500 text-end mb-2">70%<span class="float-start">PHP</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">65%<span class="float-start">Laravel</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="text-light fw-500 text-end mb-2">70%<span class="float-start">MY SQL</span></p>
+                    <div class="progress progress-sm bg-black mb-5">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="portfolio" id="Portfolio" style="overflow: hidden">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">نمونه کارهای من</h2>
+            </div>
+            <div class="row">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">1. forkify (Search over 1,000,000 recipes)</h3>
+                    <p class="resume__card--place">Java Script fetch API, OOP, Add new recipe , local storage</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <!-- <img alt="video gif animation" class="portfolio__img" src="img/Forkify-1.mp4">
+                            -->
+                            <video autoplay loop muted inline class="portfolio__img">
+                                <source src="img/Forkify-1.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text">
+                                وب اپلیکیشن forkify قابل سرچ انواع غذا ها و مشاهده مواد اولیه آن ها.<br>
+                                قابلیت ذخیره کردن یک غذا و مشاهده مجدد آن در قسمت bookmark در هر زمان.<br>
+                                امکان اضافه کردن مواد اولیه جدید و دسترسی همه کاربران به آن
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">2. Arrays Bankist</h3>
+                    <p class="resume__card--place">login & logout , Arrays option , Transfer money</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <!-- <img alt="video gif animation" class="portfolio__img" src="img/bankist.gif"> -->
+                            <video autoplay loop muted inline class="portfolio__img">
+                                <source src="img/Bankist-1.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text">
+                                وب اپلیکیشن بانکداری.<br>
+                                وارد شدن داخل اکانت بانکی با نام کاربری و رمز عبور.<br>
+                                انتقال پول به حساب بانکی دیگری با داشتن نام کاربری.<br>
+                                نتظیم زمان خارج شدن از حساب
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">3. Mapy</h3>
+                    <p class="resume__card--place">Map & Loction , Local storage , OOP , Add Workout</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <!-- <img alt="video gif animation" class="portfolio__img" src="img/mapy.gif"> -->
+                            <video autoplay loop muted inline class="portfolio__img">
+                                <source src="img/Mapy-1.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text">
+                                وب اپلیکیشن ثبت تمرین های روزانه روی نقشه.<br>
+                                امکان ثبت پیاده روی یا دوچرخه سواری همراه با متراژ یا قدم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">4. Trillo</h3>
+                    <p class="resume__card--place">Flex-Box</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <!-- <img alt="video gif animation" class="portfolio__img" src="img/trillo.gif"> -->
+                            <video autoplay loop muted inline class="portfolio__img">
+                                <source src="img/Trillo-1.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text">
+                                طراحی ریسپانیسو با flex-box
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="portfolio__card" data-aos="fade-up">
+                    <h3 class="header-3">5. Nexter</h3>
+                    <p class="resume__card--place">Grid</p>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <!-- <img src="img/forkify.png" alt="" class="portfolio__img"> -->
+                            <!-- <img alt="video gif animation" class="portfolio__img" src="img/nexter.gif"> -->
+                            <video autoplay loop muted inline class="portfolio__img">
+                                <source src="img/Nexter-1.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="col-md-5 mt-sm-5">
+                            <p class="portfolio__text">
+                                طراحی ریسپانیسو با grid
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="Contact" style="overflow-x: hidden">
+        <div class="container mt-4">
+            <div class="row">
+                <h2 class="header-2" data-aos="fade-up">با من در تماس باشید</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-4" data-aos="fade-right">
+                    <h3 class="header-3">آدرس</h3>
+                    <div class="contact__address">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/icon.svg#icon-office"></use>
+                        </svg>
+                        <p class="contact--address">اصفهان,نجف آباد-خیابان شریعتی</p>
+                    </div>
+                    <div class="contact__address">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/icon.svg#icon-phone"></use>
+                        </svg>
+                        <p class="contact--address">2292 655 0913</p>
+                    </div>
+                    <div class="contact__address mb-5">
+                        <svg class="contact__icon">
+                            <use xlink:href="img/icon.svg#icon-mail3"></use>
+                        </svg>
+                        <p class="contact--address">mohamaddadkhah69@gmail.com</p>
+                    </div>
+                    <h3 class="header-3 mt-5">دنبال کنید</h3>
+                    <div class="contact__icons">
+                        <a href="https://www.linkedin.com/in/mohammad-hosein-dadkhah-79a9a9242/" class="contact__link">
+                            <svg class="contact__icon--gray">
+                                <use xlink:href="img/icon.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/mmdkh112233" class="contact__link">
+                            <svg class="contact__icon--gray">
+                                <use xlink:href="img/icon.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="contact__link">
+                            <svg class="contact__icon--gray">
+                                <use xlink:href="img/icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8" data-aos="fade-left">
+                    <h3 class="header-3">پیام بفرستید</h3>
+                    <form class="contact__form" action="#">
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="contact__input" type="text" placeholder="نام">
+                            </div>
+                            <div class="col-6">
+                                <input class="contact__input" type="text" placeholder="پست الکترونیکی">
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-md-12">
+                                <textarea class="contact__textarea" cols="30" rows="5">درباره چیزی که میخواهید بنویسید...</textarea>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <button class="contact__btn">ارسال پیام</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    new Typed('.second-text' , {
+        strings : ["محمدحسین داخواه هستم", "توسعه دهنده فرانت هستم", "طراح سایت هستم"],
+        typeSpeed : 100,
+        backSpeed : 50,
+        loop : true
+    })
+
+    AOS.init();
+
+    function removeLoader(){
+  
+  setTimeout(()=>{
+     let loader = document.getElementById('loader');
+  
+  // hide the loader
+  loader.style = 'display: none;';
+  },2000)}
+</script>
+</html>

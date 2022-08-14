@@ -1,0 +1,29 @@
+{
+  "name": "mmdkh112233.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver":"live-server --browser=opera",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compil:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compil:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmdkh112233/mmdkh112233.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmdkh112233/mmdkh112233.github.io/issues"
+  },
+  "homepage": "https://github.com/mmdkh112233/mmdkh112233.github.io#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

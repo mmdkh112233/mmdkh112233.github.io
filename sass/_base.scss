@@ -1,0 +1,153 @@
+// COLOR VARIABLES
+$color-primary: #20c997;
+$color-primary-dark: #1baa80;
+
+$color-secondary: #111418;
+
+$color-grey-light-1: #fcf4e9;
+$color-grey-light-2: #909294;
+
+$color-grey-dark-1: #212529;
+$color-grey-dark-2: #282d31;
+
+// FONT VARIABLES
+$font-primary: Vazir;
+
+
+
+//break points
+$bp-largest: 75em; //1200px
+$bp-large:62.5em; //1000px
+$bp-medium:50em; //800px
+$bp-small:37.2em; //600px
+
+@font-face {
+  font-family: Vazir;
+  src: url('../css/');
+  src: url('../css/?#iefix') format('embedded-opentype'),
+       url('../css/vazir-font-v16.1.0/Vazir.woff') format('woff'),
+       url('../css/vazir-font-v16.1.0/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+      
+@font-face {
+  font-family: Vazir;
+  src: url('../css/vazir-font-v16.1.0/Vazir-Bold.eot');
+  src: url('../css/vazir-font-v16.1.0/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../css/vazir-font-v16.1.0/Vazir-Bold.woff') format('woff'),
+       url('../css/vazir-font-v16.1.0/Vazir-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url('../css/vazir-font-v16.1.0/Vazir-Light.eot');
+  src: url('../css/vazir-font-v16.1.0/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+       url('../css/vazir-font-v16.1.0/Vazir-Light.woff') format('woff'),
+       url('../css/vazir-font-v16.1.0/Vazir-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  // 1rem = 10px
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small){
+      font-size: 42%;
+
+  }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+    direction: rtl;
+
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 100vh repeat(5 ,minmax(10rem , max-content));
+
+    @media only screen and (max-width : $bp-large) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 7rem 100vh repeat(5 ,minmax(10rem , max-content));
+
+        
+    }
+}
+
+.header-2 {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: $color-grey-light-1;
+    text-align: center;
+}
+
+.header-3 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: $color-grey-light-1;
+    text-align: center;
+}
+  
+  #loader p {  
+    text-align: center;
+    color: $color-grey-light-1;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 5rem;
+  }
+
+  .spinner {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;  
+    background: $color-grey-dark-1
+  }
+  .spinner svg {
+    height: 10rem;
+    width: 10rem;
+    fill: $color-grey-light-1;
+    animation: rotate 2s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
