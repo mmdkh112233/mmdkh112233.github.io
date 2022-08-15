@@ -34,7 +34,6 @@ html {
       font-size: 42%; } }
 
 body {
-  font-family: Vazir;
   color: #282d31;
   font-weight: 300;
   line-height: 1.6;
@@ -50,8 +49,11 @@ body {
       grid-template-columns: 1fr;
       grid-template-rows: 7rem 100vh repeat(5, minmax(10rem, max-content)); } }
 
+section {
+  overflow: hidden; }
+
 .header-2 {
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 3rem;
   font-weight: 900;
   color: #fcf4e9;
@@ -113,6 +115,12 @@ body {
     .header {
       grid-column: 1 / -1;
       grid-row: 2 / 3; } }
+  .header .header-h {
+    padding: 1.5rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fcf4e9;
+    text-align: center; }
   .header__content {
     display: flex;
     flex-direction: column;
@@ -180,8 +188,8 @@ body {
       height: 7rem; } }
   .nav_bar__img {
     display: block;
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     border: 1rem solid #212529; }
     @media only screen and (max-width: 62.5em) {
@@ -190,9 +198,15 @@ body {
         width: 6.5rem;
         border: 0px;
         margin: 0 1rem; } }
-  @media only screen and (max-width: 62.5em) {
-    .nav_bar .header-2 {
-      margin-left: auto; } }
+  .nav_bar__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media only screen and (max-width: 62.5em) {
+      .nav_bar__div {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; } }
   .nav_bar__list {
     list-style: none;
     text-align: center;
@@ -207,8 +221,7 @@ body {
         background-color: rgba(17, 20, 24, 0.9);
         width: 100%;
         opacity: 0;
-        overflow: scroll;
-        text-align: right; } }
+        overflow: scroll; } }
   .nav_bar__checkbox {
     display: none; }
   .nav_bar__item {
@@ -233,7 +246,7 @@ body {
 @media only screen and (max-width: 62.5em) {
   .nav-bar__btn {
     display: block;
-    margin-right: 3rem;
+    margin: 0rem 3rem;
     background-color: #fcf4e9;
     height: 2px;
     width: 4.5rem;
@@ -252,6 +265,22 @@ body {
     height: 20rem;
     opacity: 1; } }
 
+.localize {
+  padding: 1rem; }
+  .localize__label {
+    color: #20c997;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .5rem; }
+  .localize__input {
+    padding: .5rem;
+    background-color: #212529;
+    border: none;
+    color: #fcf4e9; }
+  .localize__input:focus {
+    outline: none;
+    font-size: 1.5rem; }
+
 .about_me {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -267,10 +296,8 @@ body {
     padding: 1rem; }
   .col-md-5 .about_me__text:not(:last-child) {
     border-bottom: 1px solid rgba(32, 201, 151, 0.25); }
-  .about_me .header-3 {
-    text-align: right; }
   .about_me .header-2 {
-    margin: 10rem 0; }
+    margin: 5rem 0; }
 
 .services {
   grid-row: 3 / 4;
@@ -292,10 +319,8 @@ body {
     background-color: #212529;
     border-radius: 5px;
     fill: #20c997; }
-  .services .header-3 {
-    text-align: right; }
   .services .header-2 {
-    margin: 8rem 0; }
+    margin: 5rem 0; }
 
 .resume {
   grid-row: 4 / 5;
@@ -307,10 +332,7 @@ body {
       grid-row: 5 / 6;
       grid-column: 1 / 2; } }
   .resume .header-2 {
-    margin: 8rem 0; }
-  .resume .header-3 {
-    padding: .5rem;
-    text-align: right; }
+    margin: 5rem 0; }
   .resume__card {
     padding: 2rem;
     display: flex;
@@ -355,9 +377,6 @@ body {
     text-decoration: none; }
   .contact .header-2 {
     margin: 5rem 0; }
-  .contact .header-3 {
-    padding: .5rem;
-    text-align: right; }
   .contact__address {
     margin-top: 1rem;
     display: flex;
@@ -435,9 +454,6 @@ body {
       grid-column: 1 / 2; } }
   .portfolio .header-2 {
     margin: 5rem 0; }
-  .portfolio .header-3 {
-    padding: .5rem;
-    text-align: right; }
   .portfolio__card {
     background-color: #212529;
     padding: 2rem; }

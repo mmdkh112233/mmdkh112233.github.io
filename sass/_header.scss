@@ -17,6 +17,14 @@
         grid-row: 2 / 3;
     }
 
+    & .header-h {
+        padding: 1.5rem;
+        font-size: 3rem;
+        font-weight: 900;
+        color: $color-grey-light-1;
+        text-align: center;
+    }
+    
     &__content {
         display: flex;
         flex-direction: column;

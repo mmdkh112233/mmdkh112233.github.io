@@ -11,7 +11,9 @@ $color-grey-dark-1: #212529;
 $color-grey-dark-2: #282d31;
 
 // FONT VARIABLES
-$font-primary: Vazir;
+$font-primary-fa: Vazir;
+$font-primary-en: 'Nunito', sans-serif;
+
 
 
 
@@ -73,7 +75,6 @@ html {
 }
 
 body {
-    font-family: $font-primary;
     color: $color-grey-dark-2;
     font-weight: 300;
     line-height: 1.6;
@@ -95,8 +96,12 @@ body {
     }
 }
 
+section {
+  overflow: hidden;
+}
+
 .header-2 {
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 3rem;
     font-weight: 900;
     color: $color-grey-light-1;
