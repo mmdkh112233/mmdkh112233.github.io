@@ -179,6 +179,9 @@ section {
   align-items: center;
   z-index: 5;
   overflow: hidden; }
+  @media only screen and (max-width: 75em) {
+    .nav_bar {
+      overflow: scroll; } }
   @media only screen and (max-width: 62.5em) {
     .nav_bar {
       flex-direction: row;
@@ -186,10 +189,14 @@ section {
       justify-content: space-around;
       width: 100%;
       height: 7rem; } }
+  @media only screen and (max-width: 37.2em) {
+    .nav_bar .header-2 {
+      padding: .5rem;
+      font-size: 2rem; } }
   .nav_bar__img {
     display: block;
-    height: 15rem;
-    width: 15rem;
+    height: 17rem;
+    width: 17rem;
     border-radius: 50%;
     border: 1rem solid #212529; }
     @media only screen and (max-width: 62.5em) {
@@ -225,8 +232,8 @@ section {
   .nav_bar__checkbox {
     display: none; }
   .nav_bar__item {
-    padding: .8rem;
-    font-size: 2rem;
+    padding: .5rem;
+    font-size: 1.8rem;
     font-weight: 700; }
     @media only screen and (max-width: 62.5em) {
       .nav_bar__item {

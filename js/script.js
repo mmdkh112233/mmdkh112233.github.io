@@ -12,7 +12,6 @@ const typedfun = function (string) {
         backSpeed : 50,
         loop : true
     })
-    console.log(typed)
 }
 
 function removeLoader(){
@@ -39,6 +38,9 @@ langInput.addEventListener('change', function (e) {
     setText(langInput.value)
     template(langInput.value)
 })
+window.addEventListener('resize' , function () {
+    template(langInput.value)
+})
 
 const setText = (payload) => {
     const containers = document.querySelectorAll(`[data-text]`);
@@ -58,20 +60,30 @@ const template = function (lang) {
     const body = document.querySelector(".body")
     const header3 = document.querySelectorAll('.header-3')
     const list = document.querySelector('.nav_bar__list')
+    const nameInput = document.getElementById('nameInput')
+    const emailInput = document.getElementById('emailInput')
     if (lang === 'fa') {
         body.style.direction = "rtl" 
         body.style.fontFamily = "Vazir"
         header3.forEach(head => head.style.textAlign = 'right')
         x.matches ? list.style.textAlign = 'left' : list.style.textAlign = 'center';
         typedfun(["محمدحسین داخواه هستم", "توسعه دهنده فرانت هستم", "طراح سایت هستم"])
+        nameInput.placeholder = 'نام';
+        emailInput.placeholder = 'پست الکترونیکی'
     } else {
         body.style.direction = "ltr";
         body.style.fontFamily = "Nunito"
         header3.forEach(head => head.style.textAlign = 'left')
         x.matches ? list.style.textAlign = 'right' : list.style.textAlign = 'center';
         typedfun(["Mohammad Hosein Dadkhah", "a Freelanser", "a Front-end Developer", "a Web Disaner"])
+        nameInput.placeholder = 'Name';
+        emailInput.placeholder = 'Email'
     }
 }
+
+
+
+
 const locales = [
     {
         en: {
