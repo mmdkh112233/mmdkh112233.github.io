@@ -1,7 +1,31 @@
 const langInput = document.querySelector('.localize__input');
-
+const x = window.matchMedia("(max-width: 1000px)")
+const body = document.querySelector(".body")
+const header3 = document.querySelectorAll('.header-3')
+const list = document.querySelector('.nav_bar__list')
+const nameInput = document.getElementById('nameInput')
+const emailInput = document.getElementById('emailInput')
+const bodyInput = document.getElementById('bodyInput')
+const sendbtn = document.querySelector('.contact__btn');
+//////fade out animation
 AOS.init();
 
+////////send email
+sendbtn.addEventListener('click' , function(e) {
+    e.preventDefault()
+    Email.send({
+        SecureToken :"260b2482-86f4-4467-9d61-a587edd025ef",
+        To : 'mohamaddadkhah69@gmail.com',
+        From : 'mohamaddadkhah69@gmail.com',
+        Subject : "conect me portfolio",
+        Body : nameInput.value + "<br>" + emailInput.value + "<br>" + bodyInput.value,
+    }).then(
+      message => alert(message)
+    );
+})
+
+
+////////Typed animation
 var typed = new Typed('.second-text')
 
 const typedfun = function (string) {
@@ -14,6 +38,7 @@ const typedfun = function (string) {
     })
 }
 
+///////remove loader
 function removeLoader(){
 
 setTimeout(()=>{
@@ -21,11 +46,13 @@ setTimeout(()=>{
 
 // hide the loader
 loader.style = 'display: none;';
-},2000)}
+},1000)}
 
+
+///////////localize
 document.addEventListener('DOMContentLoaded' , function (e) {
     e.preventDefault()
-    const lang = localStorage.getItem('lang')
+    let lang = localStorage.getItem('lang')
     if(!lang) lang = "en";
     langInput.value = lang;
     setText(lang)
@@ -38,6 +65,7 @@ langInput.addEventListener('change', function (e) {
     setText(langInput.value)
     template(langInput.value)
 })
+
 window.addEventListener('resize' , function () {
     template(langInput.value)
 })
@@ -56,12 +84,6 @@ const setText = (payload) => {
 
 
 const template = function (lang) {
-    const x = window.matchMedia("(max-width: 1000px)")
-    const body = document.querySelector(".body")
-    const header3 = document.querySelectorAll('.header-3')
-    const list = document.querySelector('.nav_bar__list')
-    const nameInput = document.getElementById('nameInput')
-    const emailInput = document.getElementById('emailInput')
     if (lang === 'fa') {
         body.style.direction = "rtl" 
         body.style.fontFamily = "Vazir"
@@ -70,6 +92,7 @@ const template = function (lang) {
         typedfun(["محمدحسین داخواه هستم", "توسعه دهنده فرانت هستم", "طراح سایت هستم"])
         nameInput.placeholder = 'نام';
         emailInput.placeholder = 'پست الکترونیکی'
+        document.title = "نمونه کارهای من"
     } else {
         body.style.direction = "ltr";
         body.style.fontFamily = "Nunito"
@@ -78,6 +101,7 @@ const template = function (lang) {
         typedfun(["Mohammad Hosein Dadkhah", "a Freelanser", "a Front-end Developer", "a Web Disaner"])
         nameInput.placeholder = 'Name';
         emailInput.placeholder = 'Email'
+        document.title = "My Portfolio"
     }
 }
 
